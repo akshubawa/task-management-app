@@ -1,5 +1,65 @@
-node_modules
-# Keep environment variables out of version control
-.env
+############################
+# Node Backend
+############################
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.*
+!backend/.env.example
 
-/src/generated/prisma
+############################
+# Prisma
+############################
+backend/src/generated/prisma/
+backend/prisma/*.db
+backend/prisma/*.db-journal
+
+############################
+# Flutter
+############################
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+**/build/
+coverage/
+
+############################
+# Android
+############################
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+############################
+# iOS
+############################
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+
+############################
+# macOS / Windows / Linux
+############################
+**/macos/Flutter/ephemeral
+**/windows/flutter/ephemeral
+**/linux/flutter/ephemeral
+
+############################
+# IDE
+############################
+.idea/
+*.iml
+
+############################
+# Misc
+############################
+*.log
+*.swp
+.DS_Store
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
